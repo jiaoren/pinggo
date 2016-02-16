@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Pinggo</title>
+		<meta name="author" content="Huang Xia" />
+		<link rel="stylesheet/less" href="{{ STATIC_URL }}twitter-bootstrap/less/bootstrap.less">
+        <script src="{{ STATIC_URL }}less.js"></script>
+        <script src="{{ STATIC_URL }}twitter-bootstrap/js/bootstrap-affix.js"></script>
+        <script src="{{ STATIC_URL }}myjs.js"></script>
+        <link href="{{ STATIC_URL }}/my.css" rel="stylesheet">
+		<!-- Date: 2012-12-03 -->
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+        
+        {% include "header.html" %}
+        <div class="container">
+            <div class="row">
+                <div class="span3" data-spy="affix" data-offset-top="200">           	
+                    <ul class="nav navlist bs-docs-sidenav affix">
+                        <li class="active">
+                            <a href="#About_Company" onClick="$('#About_Company').show(); $('section[id!=\'About_Company\']').hide();">
+                                <i class="icon-chevron-right"></i>
+                                About Company
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="$('#Product').show(); $('section[id!=\'Product\']').hide();">
+
+                                <i class="icon-chevron-right"></i>
+                                Product
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Career" onClick="$('#Career').show(); $('section[id!=\'Career\']').hide();">
+                            	<i class="icon-chevron-right"></i>
+                                Career
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#Contact_US" onClick="$('#Contact_US').show(); $('section[id!=\'Contact_US\']').hide();">
+                                <i class="icon-chevron-right"></i>
+                                Contact
+                            </a>
+                        </li>
+                    </ul>               
+                </div>
+                <div class="span9 content">
+                    <section id="About_Company">
+                        <div class="page-header">
+                            <h1>About Company</h1>
+                        </div>
+                        <p>
+                        Our hand-crafted, American Country, American Pastoral, and European Classic styled furniture is environmentally friendly, and comply with international standards. We pride ourselves on providing our customers with the highest quality products.</br></br>
+                        Our manufacturer in China was established in the early 1990s and has its own design and production teams. In the last 20 years, our company’s products were exported to Europe, Japan, Hong Kong, Korea, Taiwan, Macao, and Southeast Asian countries.</br></br>
+                        Our customers will always be our first priority and we will strive to maintain leadership in the furniture industry by focusing on product innovation with quality and prompt service being a primary commitment to our customers.</br></br>
+                        </p>
+                    </section>
+                    <section id="Product" style="display:none">
+                        <div class="page-header">
+                            <h1>Our Product</h1>
+                        </div>
+                        <p>
+                        	Our company provides our customers with high quality, handmade, American Country, American Pastoral, and European Classic styled furniture.</br></br>
+                            <Strong>Materials</Strong></br></br>
+ 
+	                        1.  Solid wood:</br></br>
+                            The wood we use is catalpa. Catalpa grows in North America, Canada, China, Russia and other extremely cold areas. Catalpa grows slowly, and usually takes about 60 to 80 years before it is used for lumber. Catalpa is moderately hard, medium weight wood that has a smooth surface with beautiful patterns. Because of its nature, catalpa is often used in high end instruments, military supplies, and quality furniture.</br></br>
+	                        2.	Composite wood:</br></br>
+                            We use composite wood in certain parts of our furniture, most of which are high density for added strength.</br></br>
+                         	3.	Paint and glue:</br></br>
+                            The paint and glue we use are high quality, environmentally friendly, and fully compliant with international standards.</br></br>
+                        	4.	Metal components:</br></br>
+                            The metal components we use are modern, high quality, and elegant. They will not rust or discolor and are highly durable.</br></br>
+ 
+                            <strong>Crafts</strong></br></br>
+	                        1.	Hand carving:</br></br>
+                            Our team of skilled artisans produce furniture that is unique in design and highly valuable. This method of manufacturing requires no molding or casting, making our products environmentally friendly. </br></br>
+	                        2.	Hand polishing:</br></br>
+                            We hand polish our furniture giving each piece a beautiful finish.</br></br>
+                        	3.	Painting:</br></br>
+                            Our experienced staff of painters enhance the elegance of our furniture using high grade, environmentally friendly paint.</br></br>
+                        	4.	Wood veneer affixed to composite panels:</br></br>
+                            This technology is used per customers’request.</br></br>
+                            Using a solid wood veneer affixed to composite panels helps to solve durability issues such as cracking and deformation which commonly occur with hard wood furniture. The cost is the same as using pure solid wood.</br></br>
+                        	5.	Solid wood frame structure:</br></br>
+                            The frame structure is built with solid wood to make the furniture strong, durable, and resilient.</br></br>
+                        </p>
+                    </section>
+                    <section id="Career" style="display:none">
+                        <div class="page-header">
+                            <h1>Career</h1>
+                        </div>
+                        <p>
+                        	We are hiring! Please send you resume to <a href="mailto:career@pinggotrading.com">career@pinggotrading.com</a>.
+                        </p>
+                    </section>
+                    <section id="Contact_US" style="display:none">
+                        <div class="page-header">
+                            <h1>Contact Us</h1>
+                        </div>
+                        <p class="text-info">
+                        <strong>Direct:</strong> (408)895-1407</br>
+                        <strong>Fax:</strong> (408)432-7235</br></br>
+                        <strong>Email</strong>: <a href="mailto:info@pinggofurniture.com">info@pinggofurniture.com</a></br></br>
+                        <address><Strong>PingGo, inc</Strong></br>
+                                             2880 Zanker Road, Suite 203</br>
+                                             San Jose, CA 95134
+                        </address>
+                        </br>
+                        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=2880+Zanker+Road,+Suite+203+San+Jose,+CA+95134&amp;aq=&amp;sll=37.297016,-121.817413&amp;sspn=0.607407,1.271667&amp;ie=UTF8&amp;hq=&amp;hnear=2880+Zanker+Rd+%23203,+San+Jose,+Santa+Clara,+California+95134&amp;t=m&amp;z=14&amp;ll=37.395967,-121.929749&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=2880+Zanker+Road,+Suite+203+San+Jose,+CA+95134&amp;aq=&amp;sll=37.297016,-121.817413&amp;sspn=0.607407,1.271667&amp;ie=UTF8&amp;hq=&amp;hnear=2880+Zanker+Rd+%23203,+San+Jose,+Santa+Clara,+California+95134&amp;t=m&amp;z=14&amp;ll=37.395967,-121.929749" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+                        </p>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+        </br></br>
+        {% include "footer.html" %}
+	</body>
+</html>
+

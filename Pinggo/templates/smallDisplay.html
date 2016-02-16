@@ -1,0 +1,44 @@
+<script src="{{ STATIC_URL }}twitter-bootstrap/js/bootstrap-modal.js"></script>
+<script src="{{ STATIC_URL }}twitter-bootstrap/js/bootstrap-carousel.js"></script>
+<script src="{{ STATIC_URL }}myjs.js"></script>
+<div class="lv">
+{% for furniture in furnitures %}
+    {% if furniture.furnitureCatagory == 'lv' and not furniture.showInMainDisplay %}
+        <img data-id={{furniture.id}} src="{{ STATIC_URL }}images/{{furniture.furnitureImage}}" class="img-polaroid" style="height:150px;width: 150px">
+    {% endif %}
+{% endfor %}
+</div>
+
+<div class="br" style="display:none">
+{% for furniture in furnitures %}
+    {% if furniture.furnitureCatagory == 'br' and not furniture.showInMainDisplay %}
+        <img data-id={{furniture.id}} src="{{ STATIC_URL }}images/{{furniture.furnitureImage}}" class="img-polaroid" style="height:150px;width: 150px">
+    {% endif %}
+{% endfor %}
+</div>
+
+
+<div class="of" style="display:none">
+{% for furniture in furnitures %}
+    {% if furniture.furnitureCatagory == 'of' and not furniture.showInMainDisplay %}
+        <img data-id={{furniture.id}} src="{{ STATIC_URL }}images/{{furniture.furnitureImage}}" class="img-polaroid" style="height:150px;width: 150px">
+    {% endif %}
+{% endfor %}
+</div>
+
+
+<div class="kd" style="display:none">
+{% for furniture in furnitures %}
+    {% if furniture.furnitureCatagory == 'kd' and not furniture.showInMainDisplay  %}
+        <img data-id={{furniture.id}} src="{{ STATIC_URL }}images/{{furniture.furnitureImage}}" class="img-polaroid" style="height:150px;width: 150px">
+    {% endif %}
+{% endfor %}
+</div>
+
+<div class="misc" style="display:none">
+{% for furniture in furnitures %}
+    {% if furniture.furnitureCatagory == 'misc'  and  not furniture.showInMainDisplay %}
+        <img data-id={{furniture.id}} src="{{ STATIC_URL }}images/{{furniture.furnitureImage}}" class="img-polaroid" style="height:150px;width: 150px">
+    {% endif %}
+{% endfor %}
+</div>

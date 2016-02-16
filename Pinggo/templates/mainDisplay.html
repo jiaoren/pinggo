@@ -1,0 +1,19 @@
+<script src="{{ STATIC_URL }}twitter-bootstrap/js/bootstrap-carousel.js"></script>
+<script src="{{ STATIC_URL }}myjs.js"></script>
+<div id="myCarousel" class="carousel slide"style="height: 300px;width: 820px">
+  <!-- Carousel items -->
+  <div class="carousel-inner" >
+  	{% for furniture in furnitures %}
+  	    {% if furniture.showInMainDisplay %}
+  	        {% if forloop.counter == 1 %}
+  	            <div class=" active item"><img src="{{ STATIC_URL }}images/{{furniture.furnitureImage}}" class="img-polaroid" alt="" style="height: 300px;width: 800px"/></div>
+  	        {% else %}
+  	            <div class="item"><img src="{{ STATIC_URL }}images/{{furniture.furnitureImage}}" class="img-polaroid" alt="" style="height: 300px;width: 800px"/></div>
+  	        {% endif %}
+  	    {% endif %}
+  	{% endfor %} 
+    </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>

@@ -1,0 +1,148 @@
+body {
+  background-color:#DFE8F6;
+}
+
+
+
+.container-fluid,.row-fluid { height: inherit; }
+
+.brand{
+	margin-left:10px;
+}
+
+.navbar{
+  width:810px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.navbar-inverse .navbar-inner {
+  background-color:#76B3DF;
+  background-image:-webkit-linear-gradient(top, #151A30, #83787D);
+  width:810px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.navbar-inner a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar .brand {
+    margin-left: 90px;
+}
+
+.form-search{
+	display:inline;
+}
+
+
+
+.row.main{
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+.row.catagory{
+	margin-top:170px;
+	margin-left:-19px;
+	margin-right:auto;
+        width:800px;
+}
+
+.row.small{
+	margin-top:10px;
+	margin-left:40px;
+	margin-right:auto;
+        margin-bottom:60px;
+}
+
+.img-polaroid{
+	margin-top:5px;
+}
+
+#myModal{
+    //height:800px;
+    //width:800px;
+}
+
+
+
+#myModal .modal-body {
+    max-height: 450px;
+}
+
+.prettyprint {
+  margin-top:5px;
+  padding-top:15px;
+}
+
+.prettyprint {
+  background-color:#F7F7F9;
+  border:1px solid #E1E1E8;
+}
+
+
+.prettyprint span{
+    margin-left:5px;
+}
+.affix {
+  top:140px;
+}
+
+.bs-docs-sidenav {
+  -webkit-box-shadow:rgba(0, 0, 0, 0.0627451) 0 1px 4px;
+  background-color:#FFFFFF;
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+  box-shadow:rgba(0, 0, 0, 0.0627451) 0 1px 4px;
+  margin:30px 0 0;
+  padding:0;
+  width:228px;
+}
+
+.bs-docs-sidenav > li:first-child > a {
+  border-bottom-left-radius:0;
+  border-bottom-right-radius:0;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+}
+
+.bs-docs-sidenav > li > a {
+  border:1px solid #E5E5E5;
+  display:block;
+  margin:0 0 -1px;
+  padding:8px 14px;
+}
+
+
+.bs-docs-sidenav .icon-chevron-right {
+  float:right;
+  margin-right:-6px;
+  margin-top:2px;
+  opacity:0.25;
+}
+
+section{
+	padding-top:30px;
+	margin-left:30px;
+	margin-top:160px;
+}
+
+section > .page-header, section > .lead {
+  color:#5A5A5A;
+}
+
+.page-header {
+  border-bottom-color:black;
+  border-bottom-style:solid;
+  border-bottom-width:2px;
+}
+
+h5 {
+  margin-left:250px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Pinggo</title>
+		<meta name="author" content="Huang Xia" />
+                <link rel="icon" type="image/ico" href="{{STATIC_URL}}/Logo.jpg"/> 
+		<link rel="stylesheet/less" href="{{ STATIC_URL }}twitter-bootstrap/less/bootstrap.less">
+        <script src="{{ STATIC_URL }}less.js"></script>
+        <script src="{{ STATIC_URL }}myjs.js"></script>
+        <link href="{{ STATIC_URL }}/my.css" rel="stylesheet">
+		<!-- Date: 2012-12-03 -->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-40118943-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	</head>
+	<body>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+        
+        {% include "header.html" %}
+        
+        <!-- 
+        <div class="container"> 
+            <div class="row main">
+                <div class="span12"> 
+               {#     {% include "mainDisplay.html" %}  #}
+               </div> 
+            </div> 
+        </div>
+       -->
+        <div class="container">
+            <div class="row catagory">
+                <div class="span12">
+                    {% include "catagoryBar.html" %}
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row small">
+                <div class="span12">
+                    {% include "smallDisplay.html" %}
+                </div>
+            </div>
+        </div>
+        {% include "overlay.html" %}      
+        {% include "footer.html" %}
+	</body>
+</html>
+
